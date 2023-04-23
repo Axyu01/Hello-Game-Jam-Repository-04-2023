@@ -723,8 +723,6 @@ Transform:
   m_Father: {fileID: 1521029217}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1287259197
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +889,6 @@ MonoBehaviour:
   mouse_sensitivity: 10
   sprint_speed: 14
   camera: {fileID: 963194225}
->>>>>>> 36dfa0a (Merge branch 'Sosivo')
 --- !u!1 &1584186482
 GameObject:
   m_ObjectHideFlags: 0
