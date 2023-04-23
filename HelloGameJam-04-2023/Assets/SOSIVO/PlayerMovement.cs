@@ -12,9 +12,11 @@ public class PlayerMovement : MonoBehaviour
     float mouse_sensitivity = 10f;
     [SerializeField]
     float sprint_speed = 14f;
+    [SerializeField]
+    float interaction_range = 4f;
     Rigidbody rb;
     [SerializeField]
-    GameObject camera;
+    GameObject cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,9 +45,35 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)&& Physics.Raycast(transform.position,Vector3.down,1.1f))
             rb.velocity += rb.transform.up * jump_force;
         rb.rotation*=Quaternion.Euler(new Vector3(0f,mouse_sensitivity,0f)*Input.GetAxis("Mouse X"));
-        if(camera!=null)
+        if(cam!=null)
         {
-            camera.transform.rotation *= Quaternion.Euler(new Vector3(-mouse_sensitivity, 0f, 0f) * Input.GetAxis("Mouse Y"));
+            cam.transform.rotation *= Quaternion.Euler(new Vector3(-mouse_sensitivity, 0f, 0f) * Input.GetAxis("Mouse Y"));
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(cam.transform.position, rb.rotation * cam.transform.localRotation * Vector3.forward, out hit, interaction_range))
+                { 
+                    Debug.DrawLine(hit.point, hit.point + Vector3.up * 1f, Color.green);
+                    GameObject interactableObject=hit.transform.gameObject;
+                    while(interactableObject!=null && interactableObject.tag!="interactable")
+                    {
+                        if(interactableObject.transform.parent!=null)
+                            interactableObject =  interactableObject.transform.parent.gameObject;
+                        else
+                            interactableObject=null;
+                    }
+                    if (interactableObject != null && interactableObject.tag == "interactable")
+                    {
+                        InteractableObject interactable = interactableObject.GetComponent<InteractableObject>();
+                        if (interactable != null)
+                        {
+                            Debug.Log("Interaction");
+                            interactable.onInteraction();
+                        }
+                    }
+                }
+                //Debug.DrawRay(camera.transform.position, rb.rotation * camera.transform.rotation * Vector3.forward, Color.red, 10f);
+            }
         }
     }
 }
