@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class KeyScript : InteractableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    int keyIndex;
+    [SerializeField]
+    Inventory inventory;
+    public override void onInteraction()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (inventory == null)
+            return;
+        inventory.keys.Add(keyIndex);
+        Destroy(gameObject);
     }
 }

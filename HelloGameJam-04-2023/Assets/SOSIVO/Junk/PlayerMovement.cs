@@ -28,10 +28,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb == null)
             return;
-        rb.velocity = Vector3.zero+rb.velocity.y*Vector3.up;
+        rb.velocity = Vector3.zero + rb.velocity.y * Vector3.up;
         if (Input.GetKey(KeyCode.W))
         {
-            if(Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift))
                 rb.velocity += rb.transform.forward * sprint_speed;
             else
                 rb.velocity += rb.transform.forward * player_speed;
@@ -42,25 +42,29 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity -= rb.transform.forward * player_speed;
         if (Input.GetKey(KeyCode.A))
             rb.velocity -= rb.transform.right * player_speed;
-        if (Input.GetKeyDown(KeyCode.Space)&& Physics.Raycast(transform.position,Vector3.down,1.1f))
+        if (Input.GetKeyDown(KeyCode.Space) && Physics.Raycast(transform.position, Vector3.down, 1.1f))
             rb.velocity += rb.transform.up * jump_force;
-        rb.rotation*=Quaternion.Euler(new Vector3(0f,mouse_sensitivity,0f)*Input.GetAxis("Mouse X"));
-        if(cam!=null)
+        rb.rotation *= Quaternion.Euler(new Vector3(0f, mouse_sensitivity, 0f) * Input.GetAxis("Mouse X"));
+        worldInteraction();
+    }
+    void worldInteraction()
+    {
+        if (cam != null)
         {
             cam.transform.rotation *= Quaternion.Euler(new Vector3(-mouse_sensitivity, 0f, 0f) * Input.GetAxis("Mouse Y"));
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 RaycastHit hit;
                 if (Physics.Raycast(cam.transform.position, rb.rotation * cam.transform.localRotation * Vector3.forward, out hit, interaction_range))
-                { 
+                {
                     Debug.DrawLine(hit.point, hit.point + Vector3.up * 1f, Color.green);
-                    GameObject interactableObject=hit.transform.gameObject;
-                    while(interactableObject!=null && interactableObject.tag!="interactable")
+                    GameObject interactableObject = hit.transform.gameObject;
+                    while (interactableObject != null && interactableObject.tag != "interactable")
                     {
-                        if(interactableObject.transform.parent!=null)
-                            interactableObject =  interactableObject.transform.parent.gameObject;
+                        if (interactableObject.transform.parent != null)
+                            interactableObject = interactableObject.transform.parent.gameObject;
                         else
-                            interactableObject=null;
+                            interactableObject = null;
                     }
                     if (interactableObject != null && interactableObject.tag == "interactable")
                     {
