@@ -147,11 +147,14 @@ public class FPSController : PortalTraveller {
                     }
                     if (interactableObject != null && interactableObject.tag == "interactable")
                     {
-                        InteractableObject interactable = interactableObject.GetComponent<InteractableObject>();
+                        InteractableObject[] interactable = interactableObject.GetComponents<InteractableObject>();
                         if (interactable != null)
                         {
-                            Debug.Log("Interaction");
-                            interactable.onInteraction();
+                            foreach (InteractableObject interactableObj in interactable)
+                            {
+                                Debug.Log("Interaction");
+                                interactableObj.onInteraction();
+                            }
                         }
                     }
                 }

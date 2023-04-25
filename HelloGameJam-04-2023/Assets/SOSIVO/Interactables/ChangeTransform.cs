@@ -40,9 +40,9 @@ public class ChangeTransform : InteractableObject
         clamp(currentTransform.position.y, transform.position.y, transform.position.y, (currentTransform.position.y > transform.position.y ? position_change_speed : -position_change_speed * Time.fixedDeltaTime)),
         clamp(currentTransform.position.z, transform.position.z, transform.position.z, (currentTransform.position.z > transform.position.z ? position_change_speed : -position_change_speed * Time.fixedDeltaTime))
         );*/
-        Vector3 destinyRotation = currentTransform.rotation.eulerAngles;
-        Vector3 rotation = transform.rotation.eulerAngles;
-        transform.rotation = Quaternion.Euler(moveToEnd(rotation, destinyRotation, rotation_change_speed * Time.fixedDeltaTime));
+        Quaternion destinyRotation = currentTransform.rotation;
+        Quaternion rotation = transform.rotation;
+        transform.rotation = Quaternion.RotateTowards(rotation, destinyRotation, rotation_change_speed * Time.fixedDeltaTime);
         /*Quaternion.Euler(new Vector3(
        clamp(destinyRotation.x, rotation.x, rotation.x, (destinyRotation.x > rotation.x ? rotation_change_speed : -rotation_change_speed * Time.fixedDeltaTime)),
        clamp(destinyRotation.y, rotation.y, rotation.y, (destinyRotation.y > rotation.y ? rotation_change_speed : -rotation_change_speed * Time.fixedDeltaTime)),
