@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         levelManager = FindObjectOfType<LevelManager>().GetComponent<LevelManager>();
-        currentHealth = MaxHealth;        
+        currentHealth = MaxHealth;
     }
 
     void Update()
@@ -48,6 +48,11 @@ public class PlayerHealth : MonoBehaviour
             StopAllCoroutines();
         }
 
+    }
+
+    public void ResetPlayerHealth()
+    {
+        currentHealth = maxHealth;
     }
 
     IEnumerator DamageDealer()

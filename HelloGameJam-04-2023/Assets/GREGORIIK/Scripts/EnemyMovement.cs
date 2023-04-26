@@ -21,7 +21,6 @@ public class EnemyMovement : MonoBehaviour
     {
         timer += Time.deltaTime;
         float verticalMovement = Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude);
-        Debug.Log(verticalMovement);
         float yPos = target.transform.position.y + verticalMovement;
         Vector3 targetPosition = new Vector3(target.transform.position.x+ Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude), yPos, target.transform.position.z+ Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude));
         if (targetPosition != gameObject.transform.position)

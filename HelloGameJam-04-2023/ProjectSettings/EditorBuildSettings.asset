@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GREGORIIK/Scenes/MainMenuScene.unity
     guid: 24dc87d7d8953874fac956bb81eb02c1
+  - enabled: 1
+    path: Assets/GREGORIIK/Scenes/SosivoTestScene 1.unity
+    guid: 435861025fcd1124e85889d3946ab0ef
   m_configObjects: {}

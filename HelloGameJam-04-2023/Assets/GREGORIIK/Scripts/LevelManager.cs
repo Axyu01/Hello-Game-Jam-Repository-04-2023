@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class LevelManager : MonoBehaviour
 {
     Scene currentScene;
@@ -9,20 +10,27 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        playerHealth = FindObjectOfType<PlayerHealth>().GetComponent<PlayerHealth>();
+        DontDestroyOnLoad(this.gameObject);
+        if (playerHealth != null) playerHealth = FindObjectOfType<PlayerHealth>().GetComponent<PlayerHealth>();
         currentScene = SceneManager.GetActiveScene();
     }
 
     public void OnPlayerDeath()
     {
-        playerHealth.currentHealth = playerHealth.MaxHealth;
+        playerHealth.ResetPlayerHealth();
         SceneManager.LoadScene(currentScene.buildIndex);
     }
 
     private void OnLevelFinished()
     {
-        playerHealth.currentHealth = playerHealth.MaxHealth;
+        playerHealth.ResetPlayerHealth();
+        PlayerPrefs.SetInt("highestLevel", currentScene.buildIndex + 1); // test this!
         SceneManager.LoadScene(currentScene.buildIndex+1);
+    }
+
+    private void ChangeBackgroundMusic()
+    {
+
     }
 
 }
