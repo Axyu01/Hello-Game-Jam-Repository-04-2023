@@ -54,7 +54,7 @@ public class MainMenuUIController : MonoBehaviour
     //LevelManager levelManager;
     Scene currentScene;
 
-    void Awake()
+    void Start()
     {
         mainVolumeSlider.value = PlayerPrefs.GetFloat(mainVolumeTag, 0.5f);
         musicVolumeSlider.value = PlayerPrefs.GetFloat(musicVolumeTag, 0.5f);
@@ -79,7 +79,7 @@ public class MainMenuUIController : MonoBehaviour
         sfxVolumeSlider.onValueChanged.AddListener(delegate { ChangeAudioVolume(); audioPlayer.PlayRandomDoorSFX(); });
 
         newGameButton.onClick.AddListener(delegate { SceneManager.LoadScene(1); });
-        continueButton.onClick.AddListener(delegate { SceneManager.LoadScene(highestLevelAchieved); });
+        continueButton.onClick.AddListener(delegate { Debug.Log(highestLevelAchieved);/*SceneManager.LoadScene(highestLevelAchieved);*/ });
 
         creditsButton.onClick.AddListener(delegate { creditsScreen.SetActive(true);
                                                      StartCoroutine(ScrollCredits());

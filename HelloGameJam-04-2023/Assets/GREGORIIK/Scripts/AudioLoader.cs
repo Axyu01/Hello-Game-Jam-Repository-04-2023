@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AudioLoader : MonoBehaviour
+public class AudioLoader : Singleton<AudioLoader>
 {
     public AudioClip[] audioClips;
     private AudioSource audioSource;

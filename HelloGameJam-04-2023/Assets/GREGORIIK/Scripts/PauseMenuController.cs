@@ -21,7 +21,7 @@ public class PauseMenuController : MonoBehaviour
         confirmWindow.SetActive(false);
         returnButton.onClick.AddListener( delegate { TogglePauseMenu(pauseMenu.enabled); });
         quitButton.onClick.AddListener(delegate { ToggleConfirmWindow(); });
-        confirmButton.onClick.AddListener(delegate { SceneManager.LoadScene(0); });
+        confirmButton.onClick.AddListener(delegate { ReturnToMainMenu(); });
         cancelButton.onClick.AddListener(delegate { ToggleConfirmWindow(); });
     }
 
@@ -54,5 +54,11 @@ public class PauseMenuController : MonoBehaviour
     private void ToggleConfirmWindow()
     {
         confirmWindow.SetActive(!confirmWindow.activeSelf);
+    }
+
+    private void ReturnToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }

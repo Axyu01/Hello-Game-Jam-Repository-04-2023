@@ -4778,6 +4778,8 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: f34ce3285074fe1468febdd584699208, type: 3}
   - {fileID: 8300000, guid: b1070c8685eabf84591dcfb1a025ed13, type: 3}
+  - {fileID: 8300000, guid: ad5ce69a4650c2b47a2793979c0ca3fc, type: 3}
+  - {fileID: 8300000, guid: ea953367b5efeaf41946c4ae433761a7, type: 3}
 --- !u!4 &1707769132
 Transform:
   m_ObjectHideFlags: 0
@@ -6492,7 +6494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7531172492649496589, guid: 9e2cc19ac9957c74bb0ff749499d86bc, type: 3}
       propertyPath: backgroundMusicList.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7531172492649496589, guid: 9e2cc19ac9957c74bb0ff749499d86bc, type: 3}
       propertyPath: backgroundMusicList.Array.data[0]
@@ -6502,6 +6504,14 @@ PrefabInstance:
       propertyPath: backgroundMusicList.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: b1070c8685eabf84591dcfb1a025ed13, type: 3}
+    - target: {fileID: 7531172492649496589, guid: 9e2cc19ac9957c74bb0ff749499d86bc, type: 3}
+      propertyPath: backgroundMusicList.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: ad5ce69a4650c2b47a2793979c0ca3fc, type: 3}
+    - target: {fileID: 7531172492649496589, guid: 9e2cc19ac9957c74bb0ff749499d86bc, type: 3}
+      propertyPath: backgroundMusicList.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: ea953367b5efeaf41946c4ae433761a7, type: 3}
     - target: {fileID: 7531172492649496590, guid: 9e2cc19ac9957c74bb0ff749499d86bc, type: 3}
       propertyPath: m_Name
       value: BackgroundMusic
