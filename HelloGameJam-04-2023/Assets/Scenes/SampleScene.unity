@@ -888,7 +888,8 @@ MonoBehaviour:
   jump_force: 5
   mouse_sensitivity: 10
   sprint_speed: 14
-  camera: {fileID: 963194225}
+  interaction_range: 4
+  cam: {fileID: 0}
 --- !u!1 &1584186482
 GameObject:
   m_ObjectHideFlags: 0
