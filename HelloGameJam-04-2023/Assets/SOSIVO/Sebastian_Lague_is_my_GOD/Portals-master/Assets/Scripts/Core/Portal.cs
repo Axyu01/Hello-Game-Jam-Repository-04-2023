@@ -322,6 +322,7 @@ public class Portal : MonoBehaviour {
         Gizmos.color = Color.magenta;
         Gizmos.DrawSphere(transform.position + transform.up*transform.localScale.y*1.5f + transform.forward *transform.localScale.z, transform.localScale.magnitude*0.15f);
         Gizmos.color = Color.cyan;
+        if(linkedPortal!=null)
         Gizmos.DrawLine(transform.position, linkedPortal.transform.position);
     }
 }
