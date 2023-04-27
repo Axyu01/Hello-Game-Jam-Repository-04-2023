@@ -7,10 +7,14 @@ public class LevelManager : MonoBehaviour
 {
     Scene currentScene;
     PlayerHealth playerHealth;
+    BackgroundMusic backgroundMusic;
+    AudioLoader audioLoader;
 
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        audioLoader = FindObjectOfType<AudioLoader>();
+        backgroundMusic = FindObjectOfType<BackgroundMusic>().GetComponent<BackgroundMusic>();
         if (playerHealth != null) playerHealth = FindObjectOfType<PlayerHealth>().GetComponent<PlayerHealth>();
         currentScene = SceneManager.GetActiveScene();
     }
@@ -27,10 +31,4 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.SetInt("highestLevel", currentScene.buildIndex + 1); // test this!
         SceneManager.LoadScene(currentScene.buildIndex+1);
     }
-
-    private void ChangeBackgroundMusic()
-    {
-
-    }
-
 }

@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 public class BackgroundMusic : Singleton<BackgroundMusic>
 {
     AudioSource m_aSource;
-    [SerializeField] AudioClip[] backgroundMusicList;
+    AudioLoader audioLoader;
+    [SerializeField] public AudioClip[] backgroundMusicList;
+    //AudioClip backgroundMusic;
+
+    public int currentSceneIndex;
 
     void Awake()
     {
@@ -23,17 +27,7 @@ public class BackgroundMusic : Singleton<BackgroundMusic>
     void Start()
     {
         m_aSource = GetComponent<AudioSource>();
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
-
-    private void Update()
-    {
-        //if (Input.GetKeyUp(KeyCode.N)) { m_aSource.clip = backgroundMusicList[1]; m_aSource.Play();  }
-    }
-
-    /*public void PlayNextBackgroundMusic()
-    {
-        m_aSource.clip = backgroundMusicList[0];
-        m_aSource.Play();
-    }*/
 
 }

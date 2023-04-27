@@ -51,7 +51,7 @@ public class MainMenuUIController : MonoBehaviour
     string highestLevelTag = "highestLevel";
 
     AudioPlayer audioPlayer;
-    LevelManager levelManager;
+    //LevelManager levelManager;
     Scene currentScene;
 
     void Awake()
@@ -63,7 +63,7 @@ public class MainMenuUIController : MonoBehaviour
 
 
         audioPlayer = FindObjectOfType<AudioPlayer>().GetComponent<AudioPlayer>();
-        levelManager = FindAnyObjectByType<LevelManager>();
+        //levelManager = FindAnyObjectByType<LevelManager>();
         currentScene = SceneManager.GetActiveScene();
 
         optionsButton.onClick.AddListener(delegate { SwitchOptionsPanelVisible(); });

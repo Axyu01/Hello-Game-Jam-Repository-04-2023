@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioPlayer : Singleton<AudioPlayer>
+public class AudioPlayer : MonoBehaviour
 {
     [SerializeField] AudioClip[] audioClips;
     [SerializeField] AudioSource sfxAudioSource;
-    AudioSource[] audioSources;
+    List<AudioSource> audioSources;
+
     MainMenuUIController mainMenuUIController;
     void Start()
     {
-        audioSources = FindObjectsOfType<AudioSource>();
+        audioSources = new List<AudioSource>();
+        audioSources.AddRange(FindObjectsOfType<AudioSource>());
         mainMenuUIController = FindObjectOfType<MainMenuUIController>().GetComponent<MainMenuUIController>();
         SetAudioVolume();
     }
@@ -19,6 +21,11 @@ public class AudioPlayer : Singleton<AudioPlayer>
     {
         foreach (AudioSource source in audioSources)
         {
+            if (source == null)
+            {
+                audioSources.Remove(source);
+                return;
+            }
             if (source.tag == "Music") 
             {
                 source.volume = mainMenuUIController.mainVolumeSlider.value * mainMenuUIController.musicVolumeSlider.value;
