@@ -5,16 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - interactable
+  - Music
+  - SFX
+  - Dialog
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LoadingScreen
   - Water
   - UI
   - 
   - 
-  - 
+  -
   - 
   - 
   - 
