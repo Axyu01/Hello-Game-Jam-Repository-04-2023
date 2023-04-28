@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1442591996520498585}
+  - component: {fileID: 3369055344714830558}
   m_Layer: 0
   m_Name: drawer_small_model
   m_TagString: Untagged
@@ -118,6 +119,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3369055344714830558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255966325201264419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.91, z: 0.55}
+  m_Center: {x: 0, y: 0.4, z: -0.03}
 --- !u!1 &2833025625506266341
 GameObject:
   m_ObjectHideFlags: 0
