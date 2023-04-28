@@ -31,6 +31,8 @@ public class DoorScript : InteractableObject
     {
         startRotation = rotator.transform.localRotation.eulerAngles.y;
         currentRotation = rotator.transform.localRotation.eulerAngles.y;
+        if(isLocked==false && lockObject!=null)
+            Destroy(lockObject);
 
     }
     const float ROTATATION_SPEED= 90f;
