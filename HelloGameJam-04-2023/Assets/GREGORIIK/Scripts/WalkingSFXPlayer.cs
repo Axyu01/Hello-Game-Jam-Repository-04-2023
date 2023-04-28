@@ -7,11 +7,10 @@ public class WalkingSFXPlayer : MonoBehaviour
     //Dorobiæ wy³¹czanie przy podskoczeniu 
 
 
-    public GameObject player;
-    public AudioSource audioSource;
+    GameObject player;
+    AudioSource audioSource;
 
     private Rigidbody playerRigidbody;
-    private Vector3 lastPlayerPos;
     private bool isMoving;
 
     void Start()
@@ -19,7 +18,6 @@ public class WalkingSFXPlayer : MonoBehaviour
         player = FindObjectOfType<PlayerMovement>().gameObject;
         audioSource = GetComponent<AudioSource>();
         playerRigidbody = player.GetComponent<Rigidbody>();
-        lastPlayerPos = player.transform.position;
         isMoving = false;
     }
 
