@@ -13,6 +13,7 @@ public class Portal : MonoBehaviour {
     public float nearClipLimit = 0.2f;
 
     // Private variables
+    [SerializeField]
     RenderTexture viewTexture;
     Camera portalCam;
     Camera playerCam;
@@ -77,7 +78,6 @@ public class Portal : MonoBehaviour {
         if (!CameraUtility.VisibleFromCamera (linkedPortal.screen, playerCam)) {
             return;
         }
-
         CreateViewTexture ();
 
         var localToWorldMatrix = playerCam.transform.localToWorldMatrix;

@@ -2,17 +2,18 @@
 {
     Properties
     {
-        _InactiveColour ("Inactive Colour", Color) = (1, 1, 1, 1)
+        _InactiveColour("Inactive Colour", Color) = (1, 1, 1, 1)
+        _MainTex("Portal Texture", 2D) = "red" {}
     }
-    SubShader
+
+        SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType" = "Opaque" }
         LOD 100
         Cull Off
-
         Pass
         {
-            CGPROGRAM
+            HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             #include "UnityCG.cginc"
@@ -31,9 +32,8 @@
             sampler2D _MainTex;
             float4 _InactiveColour;
             int displayMask; // set to 1 to display texture, otherwise will draw test colour
-            
 
-            v2f vert (appdata v)
+            v2f vert(appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
@@ -41,14 +41,14 @@
                 return o;
             }
 
-            fixed4 frag (v2f i) : SV_Target
+            fixed4 frag(v2f i) : SV_Target
             {
                 float2 uv = i.screenPos.xy / i.screenPos.w;
                 fixed4 portalCol = tex2D(_MainTex, uv);
-                return portalCol * displayMask + _InactiveColour * (1-displayMask);
+                return portalCol * displayMask + _InactiveColour * (1 - displayMask);
             }
-            ENDCG
+            ENDHLSL
         }
     }
-    Fallback "Standard" // for shadows
+        FallBack "Diffuse"
 }
