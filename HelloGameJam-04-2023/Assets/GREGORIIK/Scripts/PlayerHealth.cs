@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] LevelData levelData;
     [SerializeField] float maxHealth = 100;
     [SerializeField] float timeFromLastDamage = 0;
     [SerializeField] float healthRestoreDelay = 5;
@@ -16,8 +18,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        levelManager = FindObjectOfType<LevelManager>().GetComponent<LevelManager>();
         currentHealth = MaxHealth;
+        //levelManager = FindObjectOfType<LevelManager>().GetComponent<LevelManager>();
     }
 
     void Update()
@@ -29,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         if (timeFromLastDamage < healthRestoreDelay) timeFromLastDamage += Time.deltaTime;
-        if (currentHealth <= 0) levelManager.OnPlayerDeath();
+        if (currentHealth <= 0) LevelData.loadScene("DeathScreen");//levelManager.OnPlayerDeath();
     }
 
     private void OnTriggerEnter(Collider other)
