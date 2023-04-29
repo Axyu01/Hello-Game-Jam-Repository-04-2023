@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3723080524096208103}
   - component: {fileID: 5905470939988221772}
   - component: {fileID: 8332566931221823001}
+  - component: {fileID: 5062439064601960037}
   m_Layer: 0
   m_Name: doniczka
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5062439064601960037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635490540958148237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0037124215, y: 0.0037124208, z: 0.0024741513}
+  m_Center: {x: 0, y: 0, z: 0.001238756}
 --- !u!1 &2107747326125867008
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +142,7 @@ GameObject:
   - component: {fileID: 2614490385768015870}
   - component: {fileID: 5782546579983603946}
   - component: {fileID: 6552417031106247107}
+  - component: {fileID: 3408859450817372227}
   m_Layer: 0
   m_Name: listki
   m_TagString: Untagged
@@ -200,3 +215,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3408859450817372227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6101197118560469639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004613268, y: 0.004442733, z: 0.0041482165}
+  m_Center: {x: 0.0000017032726, y: -0.000016566944, z: 0.0036171195}

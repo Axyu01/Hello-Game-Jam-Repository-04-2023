@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1945047478302814490}
   - component: {fileID: 3265648443456831167}
   - component: {fileID: 771556707785362037}
+  - component: {fileID: 3170194361272557284}
   m_Layer: 0
   m_Name: szachownica
   m_TagString: Untagged
@@ -85,3 +86,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3170194361272557284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276175438807460768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010938608, y: 0.010938606, z: 0.008778484}
+  m_Center: {x: 0, y: 2.4678796e-17, z: -0.003473231}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 176069589322316412}
   - component: {fileID: 3881643070487344601}
   - component: {fileID: 1313549739795530003}
+  - component: {fileID: 6323028660357280878}
   m_Layer: 0
   m_Name: "salon_ksi\u0105\u017Cka3"
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6323028660357280878
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664939515290214598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0014047732, y: 0.0019971132, z: 0.00044614467}
+  m_Center: {x: 0.000012307399, y: 0, z: 0}

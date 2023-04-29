@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 680590753531087617}
   - component: {fileID: 5324404012240749263}
   - component: {fileID: 7802998024178748988}
+  - component: {fileID: 8972214491809985163}
   m_Layer: 0
   m_Name: podstawken
   m_TagString: Untagged
@@ -199,3 +200,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8972214491809985163
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885586883285900316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010994576, y: 0.019999996, z: 0.008955002}
+  m_Center: {x: 0.000143209, y: -0.000000007450581, z: 0.0034963863}

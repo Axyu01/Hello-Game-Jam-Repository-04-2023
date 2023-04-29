@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6062301028433167489}
   - component: {fileID: 7173747394393246500}
   - component: {fileID: 4929948965562056686}
+  - component: {fileID: 765715585824772208}
   m_Layer: 0
   m_Name: "jadalnia_krzes\u0142o (2)"
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &765715585824772208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6875393572629044795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0049814503, y: 0.0051204287, z: 0.00902589}
+  m_Center: {x: -3.041442e-12, y: 0.0004602139, z: 0.0003659444}

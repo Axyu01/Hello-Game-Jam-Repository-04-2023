@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3064678372781581170}
   - component: {fileID: 2100989885710658775}
   - component: {fileID: 4236972878943754269}
+  - component: {fileID: 3889029054644426831}
   m_Layer: 0
   m_Name: "krzes\u0142o3"
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3889029054644426831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2435387549641325000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00498145, y: 0.005120427, z: 0.009025888}
+  m_Center: {x: 0, y: 0.0004602138, z: 0.00036594432}

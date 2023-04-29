@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6393122134794538627}
   - component: {fileID: 8004925277921771814}
   - component: {fileID: 5256758947204986348}
+  - component: {fileID: 1949249880605623819}
   m_Layer: 0
   m_Name: fotel
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1949249880605623819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6049247001595204665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010994577, y: 0.012876537, z: 0.010081547}
+  m_Center: {x: 0.00014320895, y: -0.0035617314, z: 0.002933115}
