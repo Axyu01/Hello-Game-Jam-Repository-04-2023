@@ -109,8 +109,10 @@ public class FPSController : PortalTraveller {
         smoothYaw = Mathf.SmoothDampAngle (smoothYaw, yaw, ref yawSmoothV, rotationSmoothTime);
 
         transform.eulerAngles = Vector3.up * smoothYaw;
-        cam.transform.localEulerAngles = Vector3.right * smoothPitch;
-
+        if (Time.timeScale > 0 && !float.IsNaN(smoothPitch))
+        {
+            cam.transform.localEulerAngles = Vector3.right * smoothPitch;
+        }
         worldInteraction();
     }
 

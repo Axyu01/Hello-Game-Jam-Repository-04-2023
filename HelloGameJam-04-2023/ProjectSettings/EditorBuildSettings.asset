@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GREGORIIK/Scenes/testScene.unity
     guid: b291e3dd42b64344d82fc4e54b56083b
+  - enabled: 1
+    path: Assets/SOSIVO/TestStartScene.unity
+    guid: fe32311211e64e546b50c7ad6de3de77
   m_configObjects: {}
