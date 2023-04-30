@@ -25,7 +25,7 @@ public class WalkingSFXPlayer : MonoBehaviour
     {
         Vector3 currentPlayerVelocity = playerRigidbody.velocity;
 
-        if (currentPlayerVelocity.magnitude > 0.1f)
+        if (currentPlayerVelocity.magnitude > 0.5f)
         {
             isMoving = true;
         }

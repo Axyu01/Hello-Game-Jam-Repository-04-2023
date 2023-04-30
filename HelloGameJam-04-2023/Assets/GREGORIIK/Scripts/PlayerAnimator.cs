@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    bool isWalking;
-    bool isRunning;
+    public bool isWalking;
+    public bool isRunning;
 
     Animator animator;
     PlayerHealth m_player;
