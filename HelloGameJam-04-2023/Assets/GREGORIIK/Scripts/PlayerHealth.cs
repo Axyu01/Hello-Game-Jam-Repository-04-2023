@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] float healthRestoreAmount = 0.5f;
     [SerializeField] float damageFromEnemy = 25;
 
+
     private bool isDead;
     public bool IsDead { get { return isDead; } set { isDead = value; } }
     public float currentHealth;
