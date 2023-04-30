@@ -11,8 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SOSIVO/SosivoTestScene.unity
     guid: def275ac6f79d244bab9e065ece77f1d
-    path: Assets/GREGORIIK/Scenes/Level2.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/GREGORIIK/Scenes/SosivoTestScene 1.unity
     guid: 435861025fcd1124e85889d3946ab0ef
