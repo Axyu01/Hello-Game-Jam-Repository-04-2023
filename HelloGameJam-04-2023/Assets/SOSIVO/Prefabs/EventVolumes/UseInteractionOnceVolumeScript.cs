@@ -23,6 +23,7 @@ public class UseInteractionOnceVolumeScript : MonoBehaviour
             Destroy(this.gameObject);
         if (other.gameObject.GetComponent<FPSController>())
         {
+            if(interactableScript!=null)
             interactableScript.onInteraction();
         }
         Destroy(this.gameObject);

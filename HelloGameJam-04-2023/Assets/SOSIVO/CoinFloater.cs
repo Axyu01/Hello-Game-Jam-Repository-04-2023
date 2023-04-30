@@ -23,6 +23,7 @@ public class CoinFloater : MonoBehaviour
     void FixedUpdate()
     {
         transform.localRotation *= Quaternion.Lerp(Quaternion.identity,Quaternion.Euler(0f, rotationSpeed, 0f),Time.fixedDeltaTime);
-        transform.position= startPosition+transform.up*Mathf.Sin(Mathf.PI*floatingSpeed*Time.time);
+        if(floatHight>0f)
+        transform.position= startPosition+transform.up*Mathf.Sin(Mathf.PI*floatingSpeed*Time.time)*floatHight;
     }
 }

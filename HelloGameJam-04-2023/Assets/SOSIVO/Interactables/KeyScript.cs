@@ -8,6 +8,12 @@ public class KeyScript : InteractableObject
     int keyIndex;
     [SerializeField]
     Inventory inventory;
+    public void Start()
+    {
+        if (inventory == null)
+            return;
+        inventory.keys.Clear();
+    }
     public override void onInteraction()
     {
         if (inventory == null)

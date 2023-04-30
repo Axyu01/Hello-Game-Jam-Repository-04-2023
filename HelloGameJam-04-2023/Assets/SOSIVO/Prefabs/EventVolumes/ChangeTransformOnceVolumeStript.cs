@@ -26,8 +26,8 @@ public class ChangeTransformOnceVolumeStript : MonoBehaviour
         if (other.gameObject.GetComponent<FPSController>())
         {
             changedTransform.position = desiredTransform.position;
-            changedTransform.rotation = desiredTransform.rotation;
-            changedTransform.localScale = desiredTransform.localScale;
+            //changedTransform.rotation = desiredTransform.rotation;
+            //changedTransform.localScale = desiredTransform.localScale;
         }
         Destroy(this.gameObject);
     }
