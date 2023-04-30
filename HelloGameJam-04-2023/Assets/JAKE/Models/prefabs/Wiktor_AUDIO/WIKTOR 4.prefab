@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1127761671471299377}
   - component: {fileID: 1127761671471299376}
   m_Layer: 0
-  m_Name: WIKOTR 4
+  m_Name: WIKTOR 4
   m_TagString: Dialog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
