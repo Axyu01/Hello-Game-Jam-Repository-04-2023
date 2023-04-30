@@ -22,7 +22,8 @@ public class Portal : MonoBehaviour {
     MeshFilter screenMeshFilter;
 
     void Awake () {
-        playerCam = Camera.main;
+        playerCam = FindObjectOfType<FPSController>().gameObject.GetComponentInChildren<Camera>();
+        Debug.Log(playerCam.gameObject.name);
         portalCam = GetComponentInChildren<Camera> ();
         portalCam.enabled = false;
         trackedTravellers = new List<PortalTraveller> ();

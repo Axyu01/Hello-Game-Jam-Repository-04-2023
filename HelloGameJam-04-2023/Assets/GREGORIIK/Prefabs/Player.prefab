@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 3197687673933331825}
   - component: {fileID: 4961643398746941362}
   - component: {fileID: 1003285376}
+  - component: {fileID: 502925647}
   m_Layer: 8
   m_Name: MainCam
   m_TagString: Untagged
@@ -392,6 +393,18 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &502925647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774878810330190273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a42331d6ec5746d4960a877e58cfb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4747605143721237316
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6a5ccf8889c4d978067bb5dc639458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graphicsObject: {fileID: 0}
+  graphicsObject: {fileID: 5558436349656373848}
   walkSpeed: 3
   runSpeed: 6
   smoothMoveTime: 0.1
@@ -993,5 +1006,10 @@ Transform:
 --- !u!4 &5073402580769652962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4328163897434490371, guid: 9f73810b24a5c5e4b95da0e18b01e755, type: 3}
+  m_PrefabInstance: {fileID: 8825052949199947489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5558436349656373848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3988899055482739897, guid: 9f73810b24a5c5e4b95da0e18b01e755, type: 3}
   m_PrefabInstance: {fileID: 8825052949199947489}
   m_PrefabAsset: {fileID: 0}
