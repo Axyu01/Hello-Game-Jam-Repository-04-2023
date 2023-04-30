@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DeathScreenController : MonoBehaviour
 {
+
     [SerializeField] Button retryButton;
     [SerializeField] Button quitButton;
     Scene currentScene;
