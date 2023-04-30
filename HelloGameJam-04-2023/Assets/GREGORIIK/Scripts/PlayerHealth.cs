@@ -31,7 +31,14 @@ public class PlayerHealth : MonoBehaviour
         }
 
         if (timeFromLastDamage < healthRestoreDelay) timeFromLastDamage += Time.deltaTime;
-        if (currentHealth <= 0) LevelData.loadScene("DeathScreen");//levelManager.OnPlayerDeath();
+        //if (currentHealth <= 0) LevelData.loadScene("DeathScreen");//levelManager.OnPlayerDeath();
+        if (currentHealth <= 0)
+        {
+            isDead = true; 
+            //deathScreenController.DeathHandler();
+            //levelManager.OnPlayerDeath();
+        }
+        if (isDead) { deathScreenController.DeathHandler(); }
     }
 
     private void OnTriggerEnter(Collider other)
