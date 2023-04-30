@@ -13,10 +13,10 @@ public class DeathScreenController : MonoBehaviour
 
     void Start()
     {
-        currentScene = SceneManager.GetActiveScene();
+        //currentScene = SceneManager.GetActiveScene();
         gameObject.SetActive(false);
-        retryButton.onClick.AddListener(delegate { RestartLevel(); });
-        quitButton.onClick.AddListener(delegate { QuitToMenu(); });
+        //retryButton.onClick.AddListener(delegate { RestartLevel(); });
+        //quitButton.onClick.AddListener(delegate { QuitToMenu(); });
     }
 
     private void RestartLevel()

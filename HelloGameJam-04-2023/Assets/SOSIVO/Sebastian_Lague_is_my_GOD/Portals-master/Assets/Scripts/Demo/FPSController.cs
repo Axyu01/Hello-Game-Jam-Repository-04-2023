@@ -20,12 +20,12 @@ public class FPSController : PortalTraveller {
     [SerializeField] Camera cam;
     public float yaw;
     public float pitch;
-    float smoothYaw;
-    float smoothPitch;
+    float smoothYaw=1f;
+    float smoothPitch=1f;
 
-    float yawSmoothV;
-    float pitchSmoothV;
-    float verticalVelocity;
+    float yawSmoothV = 1f;
+    float pitchSmoothV = 1f;
+    float verticalVelocity = 1f;
     Vector3 velocity;
     Vector3 smoothV;
     Vector3 rotationSmoothVelocity;
@@ -36,7 +36,7 @@ public class FPSController : PortalTraveller {
     bool disabled;
 
     void Start () {
-        //cam = Camera.main;
+        cam = FindObjectOfType<FPSController>().gameObject.GetComponentInChildren<Camera>();
         if (lockCursor) {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
@@ -110,6 +110,7 @@ public class FPSController : PortalTraveller {
         smoothYaw = Mathf.SmoothDampAngle (smoothYaw, yaw, ref yawSmoothV, rotationSmoothTime);
 
         transform.eulerAngles = Vector3.up * smoothYaw;
+        //transform.rotation*=Quaternion.Euler(0f, Input.GetAxisRaw("Mouse X")*4.5f, 0f);
         if (Time.timeScale > 0 && !float.IsNaN(smoothPitch))
         {
             cam.transform.localEulerAngles = Vector3.right * smoothPitch;
