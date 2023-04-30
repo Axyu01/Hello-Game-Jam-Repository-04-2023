@@ -13,9 +13,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] float healthRestoreAmount = 0.5f;
     [SerializeField] float damageFromEnemy = 25;
     public float currentHealth;
-    private bool isDead; public bool IsDead { get { return isDead; } set { isDead = value; } }
+
     LevelManager levelManager;
-    //[SerializeField] DeathScreenController deathScreenController;
+
     void Start()
     {
         currentHealth = MaxHealth;
@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
             //deathScreenController.DeathHandler();
             //levelManager.OnPlayerDeath();
         }
-        //if (isDead) { deathScreenController.DeathHandler(); }
+        if (isDead) { deathScreenController.DeathHandler(); }
     }
 
     private void OnTriggerEnter(Collider other)
