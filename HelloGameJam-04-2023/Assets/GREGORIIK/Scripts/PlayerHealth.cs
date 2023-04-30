@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
 
     LevelManager levelManager;
-
+    [SerializeField] DeathScreenController deathScreenController;
     void Start()
     {
         currentHealth = MaxHealth;
