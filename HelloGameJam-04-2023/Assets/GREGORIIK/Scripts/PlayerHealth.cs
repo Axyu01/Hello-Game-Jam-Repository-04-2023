@@ -36,8 +36,9 @@ public class PlayerHealth : MonoBehaviour
         if (timeFromLastDamage < healthRestoreDelay) timeFromLastDamage += Time.deltaTime;
         if (currentHealth <= 0)
         {
-            isDead = true;
-            levelManager.OnPlayerDeath();
+            isDead = true; 
+            //deathScreenController.DeathHandler();
+            //levelManager.OnPlayerDeath();
         }
         if (isDead) { deathScreenController.DeathHandler(); }
     }
