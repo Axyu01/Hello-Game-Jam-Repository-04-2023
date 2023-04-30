@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FPSController : PortalTraveller {
 
+
     public float walkSpeed = 3;
     public float runSpeed = 6;
     public float smoothMoveTime = 0.1f;
@@ -16,7 +17,7 @@ public class FPSController : PortalTraveller {
     public float rotationSmoothTime = 0.1f;
 
     CharacterController controller;
-    Camera cam;
+    [SerializeField] Camera cam;
     public float yaw;
     public float pitch;
     float smoothYaw;
@@ -35,7 +36,7 @@ public class FPSController : PortalTraveller {
     bool disabled;
 
     void Start () {
-        cam = Camera.main;
+        //cam = Camera.main;
         if (lockCursor) {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
