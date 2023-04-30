@@ -51,6 +51,7 @@ public class MainMenuUIController : MonoBehaviour
     string highestLevelTag = "highestLevel";
 
     AudioPlayer audioPlayer;
+    //LevelManager levelManager;
     Scene currentScene;
 
     void Start()
@@ -62,10 +63,11 @@ public class MainMenuUIController : MonoBehaviour
 
 
         audioPlayer = FindObjectOfType<AudioPlayer>().GetComponent<AudioPlayer>();
+        //levelManager = FindAnyObjectByType<LevelManager>();
         currentScene = SceneManager.GetActiveScene();
 
         optionsButton.onClick.AddListener(delegate { SwitchOptionsPanelVisible(); });
-        startButton.onClick.AddListener(delegate { SceneManager.LoadScene(1);/*StartGame();*/ });
+        startButton.onClick.AddListener(delegate { StartGame(); });
         quitButton.onClick.AddListener(delegate { QuitGame(); });
 
         cancelButton.onClick.AddListener(delegate { CancelChanges(); audioPlayer.PlayRandomDoorSFX(); });
@@ -77,7 +79,7 @@ public class MainMenuUIController : MonoBehaviour
         sfxVolumeSlider.onValueChanged.AddListener(delegate { ChangeAudioVolume(); audioPlayer.PlayRandomDoorSFX(); });
 
         newGameButton.onClick.AddListener(delegate { SceneManager.LoadScene(1); });
-        continueButton.onClick.AddListener(delegate { SceneManager.LoadScene(highestLevelAchieved); });
+        continueButton.onClick.AddListener(delegate { Debug.Log(highestLevelAchieved);/*SceneManager.LoadScene(highestLevelAchieved);*/ });
 
         creditsButton.onClick.AddListener(delegate { creditsScreen.SetActive(true);
                                                      StartCoroutine(ScrollCredits());
@@ -112,11 +114,9 @@ public class MainMenuUIController : MonoBehaviour
         sfxVolumeText.text = "SFX: " + (int)(sfxVolumeSlider.value * 100);
     }
 
-    private void StartGame() // Doesnt work, fix in spare time
+    private void StartGame()
     {
-        Debug.Log(highestLevelAchieved);
-        if ( highestLevelAchieved > 0)
-            SceneManager.LoadScene(1);
+        if (!PlayerPrefs.HasKey(highestLevelTag) || highestLevelAchieved == 1) SceneManager.LoadScene(currentScene.buildIndex + 1);
         else newGameWindow.SetActive(true);
         audioPlayer.PlayRandomDoorSFX();
     }

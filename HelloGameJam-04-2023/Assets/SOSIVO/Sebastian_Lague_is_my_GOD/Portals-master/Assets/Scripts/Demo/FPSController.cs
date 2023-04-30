@@ -10,16 +10,13 @@ public class FPSController : PortalTraveller {
     public float jumpForce = 8;
     public float gravity = 18;
 
-    public float WalkSpeed() { return walkSpeed; }
-    public float RunSpeed() { return runSpeed; }
-
     public bool lockCursor;
     public float mouseSensitivity = 10;
     public Vector2 pitchMinMax = new Vector2 (-40, 85);
     public float rotationSmoothTime = 0.1f;
 
     CharacterController controller;
-    [SerializeField]Camera cam;
+    Camera cam;
     public float yaw;
     public float pitch;
     float smoothYaw;
@@ -38,7 +35,7 @@ public class FPSController : PortalTraveller {
     bool disabled;
 
     void Start () {
-        //cam = Camera.main;
+        cam = Camera.main;
         if (lockCursor) {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
