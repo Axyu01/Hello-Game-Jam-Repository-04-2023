@@ -13,6 +13,8 @@ public class LevelData : ScriptableObject
     }
     static public void loadScene(string scene)
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(scene);
     }
     public void loadLastScene()

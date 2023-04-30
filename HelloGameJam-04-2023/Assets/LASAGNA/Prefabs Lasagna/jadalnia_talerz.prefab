@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2124084737781966276}
   - component: {fileID: 3086540545684515425}
   - component: {fileID: 950663093687246507}
+  - component: {fileID: 1668670588960823271}
   m_Layer: 0
   m_Name: jadalnia_talerz
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1668670588960823271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599221504399310718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.005858707, y: 0.005858706, z: 0.0005569372}
+  m_Center: {x: 0, y: 0, z: 0.0013403727}

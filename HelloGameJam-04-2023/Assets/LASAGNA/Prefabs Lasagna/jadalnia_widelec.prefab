@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7965567537305403714}
   - component: {fileID: 6423464497779298023}
   - component: {fileID: 9133385412879268397}
+  - component: {fileID: 2641378404054051440}
   m_Layer: 0
   m_Name: jadalnia_widelec
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2641378404054051440
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7332055719023778808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001833188, y: 0.0021652442, z: 0.00009857863}
+  m_Center: {x: -0.00006257253, y: -9.7659526e-11, z: 0.00004442542}
