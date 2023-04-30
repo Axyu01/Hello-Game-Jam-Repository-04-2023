@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SOSIVO/DeathScreen.unity
-    guid: 36a98e1913bbaf242b2294ba75d18002
-  - enabled: 1
-    path: Assets/SOSIVO/SosivoTestScene.unity
-    guid: def275ac6f79d244bab9e065ece77f1d
-  - enabled: 1
-    path: Assets/GREGORIIK/Scenes/SosivoTestScene 1.unity
-    guid: 435861025fcd1124e85889d3946ab0ef
+    path: Assets/GREGORIIK/Scenes/MainMenuScene.unity
+    guid: 24dc87d7d8953874fac956bb81eb02c1
   - enabled: 1
     path: Assets/GREGORIIK/Scenes/testScene.unity
     guid: b291e3dd42b64344d82fc4e54b56083b
+  - enabled: 1
+    path: Assets/GREGORIIK/Scenes/testScene 1.unity
+    guid: 10815e4eda15d454fa16b9ee35f8c5ee
+  - enabled: 1
+    path: Assets/GREGORIIK/Scenes/EndingScene.unity
+    guid: faa687a7e25c4cb42982cd1854f8411d
   m_configObjects: {}
