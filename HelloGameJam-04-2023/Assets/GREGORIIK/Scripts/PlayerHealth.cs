@@ -12,6 +12,10 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] float healthRestoreDelay = 5;
     [SerializeField] float healthRestoreAmount = 0.5f;
     [SerializeField] float damageFromEnemy = 25;
+
+
+    private bool isDead;
+    public bool IsDead { get { return isDead; } set { isDead = value; } }
     public float currentHealth;
 
     LevelManager levelManager;
@@ -31,7 +35,14 @@ public class PlayerHealth : MonoBehaviour
         }
 
         if (timeFromLastDamage < healthRestoreDelay) timeFromLastDamage += Time.deltaTime;
-        if (currentHealth <= 0) LevelData.loadScene("DeathScreen");//levelManager.OnPlayerDeath();
+        //if (currentHealth <= 0) LevelData.loadScene("DeathScreen");//levelManager.OnPlayerDeath();
+
+        if (currentHealth <= 0)
+        {
+            isDead = true; 
+            deathScreenController.DeathHandler();
+        }
+        if (isDead) { deathScreenController.DeathHandler(); }
     }
 
     private void OnTriggerEnter(Collider other)

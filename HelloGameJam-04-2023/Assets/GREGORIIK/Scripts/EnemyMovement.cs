@@ -22,10 +22,12 @@ public class EnemyMovement : MonoBehaviour
         timer += Time.deltaTime;
         float verticalMovement = Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude);
         float yPos = target.transform.position.y + verticalMovement;
-        Vector3 targetPosition = new Vector3(target.transform.position.x+ Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude), yPos, target.transform.position.z+ Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude));
+        Vector3 targetPosition = new Vector3(target.transform.position.x + Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude), 
+            yPos, target.transform.position.z + Mathf.PingPong(timer * verticalMovementSpeed, verticalMovementAmplitude));
         if (targetPosition != gameObject.transform.position)
         {
-            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, targetPosition, movementSpeed*Time.deltaTime);
+            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, 
+                new Vector3(targetPosition.x, 0.2f, targetPosition.z), movementSpeed*Time.deltaTime);
         }
     }
 }
