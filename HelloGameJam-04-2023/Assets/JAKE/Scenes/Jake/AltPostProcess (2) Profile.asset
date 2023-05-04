@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Value: 0.71
   intensity:
     m_OverrideState: 1
-    m_Value: 3.98
+    m_Value: 1.45
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
@@ -97,14 +97,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.33
   contrast:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: -14.9
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.90634525, g: 0.5896226, b: 1, a: 1}
+    m_Value: {r: 1.2221848, g: 0.94224304, b: 1.3041189, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: 0

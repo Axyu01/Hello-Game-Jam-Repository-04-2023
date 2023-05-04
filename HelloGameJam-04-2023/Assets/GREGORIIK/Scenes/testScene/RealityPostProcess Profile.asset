@@ -46,7 +46,7 @@ MonoBehaviour:
     m_Value: 0.39
   intensity:
     m_OverrideState: 1
-    m_Value: 0.33
+    m_Value: 0.26
   scatter:
     m_OverrideState: 1
     m_Value: 0.726
@@ -108,7 +108,7 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.639
+    m_Value: 0.264
   clamp:
     m_OverrideState: 0
     m_Value: 0.05
@@ -151,8 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 0
-    m_Value: 0.69
+    m_OverrideState: 1
+    m_Value: 0.74
   contrast:
     m_OverrideState: 1
     m_Value: -7

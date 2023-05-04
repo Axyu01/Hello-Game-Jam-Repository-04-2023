@@ -103,7 +103,7 @@ Material:
     - _BlendOp: 0
     - _BumpScale: 1
     - _CameraFadingEnabled: 1
-    - _CameraFarFadeDistance: 0.49
+    - _CameraFarFadeDistance: 2.01
     - _CameraNearFadeDistance: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -133,7 +133,7 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 1
-    - _SoftParticlesFarFadeDistance: 1.94
+    - _SoftParticlesFarFadeDistance: 4.48
     - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
@@ -143,10 +143,10 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
-    - _CameraFadeParams: {r: 0, g: 2.0408163, b: 0, a: 0}
+    - _CameraFadeParams: {r: 0, g: 0.49751243, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FogColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SoftParticleFadeParams: {r: 0, g: 0.5154639, b: 0, a: 0}
+    - _SoftParticleFadeParams: {r: 0, g: 0.22321428, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

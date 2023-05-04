@@ -109,6 +109,8 @@ public class FPSController : PortalTraveller {
         smoothPitch = Mathf.SmoothDampAngle (smoothPitch, pitch, ref pitchSmoothV, rotationSmoothTime);
         smoothYaw = Mathf.SmoothDampAngle (smoothYaw, yaw, ref yawSmoothV, rotationSmoothTime);
 
+        if(float.IsNaN(smoothYaw)) { smoothYaw = 180; }
+        if(float.IsNaN(smoothPitch)) { smoothPitch = 0; }
         transform.eulerAngles = Vector3.up * smoothYaw;
         //transform.rotation*=Quaternion.Euler(0f, Input.GetAxisRaw("Mouse X")*4.5f, 0f);
         if (Time.timeScale > 0 && !float.IsNaN(smoothPitch))

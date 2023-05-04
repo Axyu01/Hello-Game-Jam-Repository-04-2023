@@ -40,7 +40,7 @@ public class AudioPlayer : MonoBehaviour
             }
             else
             {
-                Debug.Log("tag error");
+                source.volume = mainMenuUIController.mainVolumeSlider.value * mainMenuUIController.dialogsVolumeSlider.value;
             }
         }
     }
