@@ -30,11 +30,11 @@ public class AudioPlayer : MonoBehaviour
             {
                 source.volume = mainMenuUIController.mainVolumeSlider.value * mainMenuUIController.musicVolumeSlider.value;
             }
-            else if (source.tag == "Dialog")
+            else if (source.tag == "Dialog" || source.tag == "Player")
             {
                 source.volume = mainMenuUIController.mainVolumeSlider.value * mainMenuUIController.dialogsVolumeSlider.value;
             }
-            else if (source.tag == "SFX")
+            else if (source.tag == "SFX" || source.tag == "interactable")
             {
                 source.volume = mainMenuUIController.mainVolumeSlider.value * mainMenuUIController.sfxVolumeSlider.value;
             }

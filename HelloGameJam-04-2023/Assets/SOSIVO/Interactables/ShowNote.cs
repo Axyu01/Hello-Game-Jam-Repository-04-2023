@@ -16,7 +16,7 @@ public class ShowNote : InteractableObject
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKeyUp(KeyCode.Mouse0))
         {
             showedNoteCanvas.gameObject.SetActive(false);
         }
@@ -24,6 +24,8 @@ public class ShowNote : InteractableObject
     public override void onInteraction()
     {
         if (showedNoteCanvas != null)
+        {
             showedNoteCanvas.gameObject.SetActive(true);
+        }
     }
 }
