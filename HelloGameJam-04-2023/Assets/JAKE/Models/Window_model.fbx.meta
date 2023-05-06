@@ -3,7 +3,37 @@ guid: 68f125c4e0fb4dc4e8de7be5c3e5051d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "dr\u0105\u017Cek _)"
+    second: {fileID: 2100000, guid: 50890ebab2154dc49af813ca2faed999, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: d7b30f3ef047934428b1add75df4f25c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kotary
+    second: {fileID: 2100000, guid: 71f51d2de814d1948bb559b36015b560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: parapet
+    second: {fileID: 2100000, guid: 7e8a20d730500d74b95ecac013d34cb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 433b4ffec0fbb754391dab4caf7b0ecf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window
+    second: {fileID: 2100000, guid: 4f6abf9837ac594498bccbc51601eabc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -8,7 +8,6 @@ public class DamageIndicator : MonoBehaviour
 {
     [SerializeField] Image image;
     [SerializeField] PlayerHealth playerHealth;
-    [SerializeField] float alpha = 0;
     Color color;
     float m_health;
 

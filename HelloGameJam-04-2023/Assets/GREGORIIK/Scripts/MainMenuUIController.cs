@@ -55,6 +55,7 @@ public class MainMenuUIController : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         mainVolumeSlider.value = PlayerPrefs.GetFloat(mainVolumeTag, 0.5f);
         musicVolumeSlider.value = PlayerPrefs.GetFloat(musicVolumeTag, 0.5f);
         dialogsVolumeSlider.value = PlayerPrefs.GetFloat(dialogVolumeTag, 0.5f);
