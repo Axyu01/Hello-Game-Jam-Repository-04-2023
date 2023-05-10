@@ -18,9 +18,12 @@ EditorBuildSettings:
     path: Assets/SOSIVO/Scenes/VoidScene.unity
     guid: b5de8343182738144baacc3b9421da56
   - enabled: 1
+    path: Assets/GREGORIIK/Scenes/TBCScene.unity
+    guid: c020704163f826242b737c6484779a0e
+  - enabled: 0
     path: Assets/LASAGNA/Scenes Lasagna/Ostatni level lasagna.unity
     guid: 2e61982d27e569b4a8d1a99902ca3d10
-  - enabled: 1
+  - enabled: 0
     path: Assets/GREGORIIK/Scenes/EndingScene.unity
     guid: faa687a7e25c4cb42982cd1854f8411d
   - enabled: 0

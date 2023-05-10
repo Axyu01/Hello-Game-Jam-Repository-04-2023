@@ -1,0 +1,331 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9066562400307847614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/island-of-the-lost-dark-fantasy-background-music-110368
+  m_EditorClassIdentifier: 
+  Path: event:/Music/island-of-the-lost-dark-fantasy-background-music-110368
+  Guid:
+    Data1: 1657183985
+    Data2: 1226567612
+    Data3: -1211758931
+    Data4: 1825761805
+  Banks:
+  - {fileID: -7592644136502935863}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 573126
+--- !u!114 &-7876143028306572798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PaperSFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PaperSFX
+  Guid:
+    Data1: -1331890156
+    Data2: 1169738150
+    Data3: 2083336611
+    Data4: 1681436378
+  Banks:
+  - {fileID: -3129226447119429257}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1176
+--- !u!114 &-7592644136502935863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMODHelloGJ/FMOD/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638193085331524248
+  FileSizes:
+  - Name: Desktop
+    Value: 30283552
+  Exists: 1
+--- !u!114 &-6567761826788644639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/stepsSFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/stepsSFX
+  Guid:
+    Data1: 810381146
+    Data2: 1317497784
+    Data3: -18009461
+    Data4: -340592080
+  Banks:
+  - {fileID: -3129226447119429257}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5352
+--- !u!114 &-5725855629899063013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMODHelloGJ/FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638193085205120063
+  FileSizes:
+  - Name: Desktop
+    Value: 1350
+  Exists: 1
+--- !u!114 &-5717519296259730912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMODHelloGJ/FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638193085205100044
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &-5195724351404235455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/offset-of-mind-no-copyright-music-nelka-senavirathna-122488
+  m_EditorClassIdentifier: 
+  Path: event:/Music/offset-of-mind-no-copyright-music-nelka-senavirathna-122488
+  Guid:
+    Data1: 1055560401
+    Data2: 1151821143
+    Data3: -795253087
+    Data4: -577521263
+  Banks:
+  - {fileID: -7592644136502935863}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 677668
+--- !u!114 &-5092971553953901451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/MenuSFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/MenuSFX
+  Guid:
+    Data1: -1838210228
+    Data2: 1202374484
+    Data3: -1220649086
+    Data4: 369432558
+  Banks:
+  - {fileID: -3129226447119429257}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2690
+--- !u!114 &-3129226447119429257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMODHelloGJ/FMOD/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638193085205861622
+  FileSizes:
+  - Name: Desktop
+    Value: 163072
+  Exists: 1
+--- !u!114 &-1753383296396983449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/dark-140112
+  m_EditorClassIdentifier: 
+  Path: event:/Music/dark-140112
+  Guid:
+    Data1: -1708533975
+    Data2: 1259859615
+    Data3: -1809036665
+    Data4: 1457745998
+  Banks:
+  - {fileID: -7592644136502935863}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 545802
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -5725855629899063013}
+  - {fileID: -5717519296259730912}
+  - {fileID: -7592644136502935863}
+  - {fileID: -3129226447119429257}
+  EditorEvents:
+  - {fileID: -1753383296396983449}
+  - {fileID: 4761070177501909361}
+  - {fileID: -5195724351404235455}
+  - {fileID: 8734931935545330385}
+  - {fileID: -9066562400307847614}
+  - {fileID: -7876143028306572798}
+  - {fileID: -5092971553953901451}
+  - {fileID: -6567761826788644639}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -5717519296259730912}
+  StringsBanks:
+  - {fileID: -5725855629899063013}
+  cacheTime: 638193085331524248
+  cacheVersion: 131603
+--- !u!114 &4761070177501909361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/sinius-the-apport-theory-dark-ambient-music-paranormal-145833
+  m_EditorClassIdentifier: 
+  Path: event:/Music/sinius-the-apport-theory-dark-ambient-music-paranormal-145833
+  Guid:
+    Data1: -45637687
+    Data2: 1179079715
+    Data3: -743782258
+    Data4: 1802128568
+  Banks:
+  - {fileID: -7592644136502935863}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 548597
+--- !u!114 &8734931935545330385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/damiano Baldoni - ambient
+  m_EditorClassIdentifier: 
+  Path: event:/Music/damiano Baldoni - ambient
+  Guid:
+    Data1: -67830300
+    Data2: 1202590213
+    Data3: -1174559613
+    Data4: 691325379
+  Banks:
+  - {fileID: -7592644136502935863}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250044

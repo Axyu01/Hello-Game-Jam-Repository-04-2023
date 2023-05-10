@@ -442,7 +442,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Gratulacje! \nUda\u0142o Ci Si\u0119 Prze\u017Cy\u0107."
+  m_text: '<b><size=100%>Congratulations</size></b>
+
+    <size=70%><color=#550000>You
+    survived</size>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1eeeffa7f8bf31245b0dcf0b1ddf4820, type: 2}
   m_sharedMaterial: {fileID: 2789516599087497408, guid: 1eeeffa7f8bf31245b0dcf0b1ddf4820, type: 2}
@@ -469,7 +472,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 101.3
+  m_fontSize: 102
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -529,7 +532,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1281533871}
   - component: {fileID: 1281533870}
-  - component: {fileID: 1281533869}
+  - component: {fileID: 1281533872}
+  - component: {fileID: 1281533873}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -537,14 +541,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1281533869
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281533868}
-  m_Enabled: 1
 --- !u!20 &1281533870
 Camera:
   m_ObjectHideFlags: 0
@@ -603,6 +599,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1281533872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281533868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+--- !u!114 &1281533873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281533868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1863694587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,12 +1043,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tw\xF3rcy\r\n\r\n\r\nNatalia Mak\xF3wka\r\nlevel design\r\nstory developer\r\npisanie
-    dialog\xF3w\r\nlektor (Alicja)\r\nmodelowanie asset\xF3w\r\ntworzenie tekstur\r\n\r\n\r\nPatryk
-    Kowalczyk\r\nprogramowanie UI\r\nprogramowanie core mechanics\r\nkompletowanie
-    i obr\xF3bka audio\r\nUI Designer\r\nVFX\r\ncharacter design\r\nanimacja postaci\r\nmodelowanie
-    postaci\r\ntworzenie tekstur\r\npost-processing\r\nlektor (Wiktor)\r\nniespanie
-    przez ca\u0142y tydzie\u0144 ( prze\u017Cy\u0142 )\r\n\r\n\r\nAdrian So\u015Bniak\r\nobs\u0142uga
+  m_text: "Creators\n\r\n\r\nNatalia Mak\xF3wka\r\nlevel design\r\nstory developer\r\nassets
+    modeling\ntextures\n\r\n\r\nPatryk Kowalczyk\r\nUI\r mechanics\nUI Design\ncoding
+    core mechanics\r\ncollecting audio\r\nVFX\r\ncharacter design\r\ncharacter animation\ncharacters
+    modeling\r\ntextures\npost-processing\r\n\r\n\r\nAdrian So\u015Bniak\r\nobs\u0142uga
     githuba\r\nlevel design\r\nprogramowanie core mechanics\r\nprogramowanie interakcji\r\nprogramowanie
     \"luster\"\r\nintegracja system\xF3w\r\n\r\n\r\nKacper Dolot\r\nlevel design\r\ntworzenie
     asset\xF3w\r\ntworzenie tekstur\r\nanimacja macek\r\nrozk\u0142adanie audio\r\nprzygotowywanie
